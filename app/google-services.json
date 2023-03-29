@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "62976687519",
+    "project_id": "allenlabs-fsm",
+    "storage_bucket": "allenlabs-fsm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62976687519:android:21a1850cf26e08b9b5d1aa",
+        "android_client_info": {
+          "package_name": "com.allenlabsfsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62976687519-np6u054h0htaeme4upd02pd7cgf7f1dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBZ3Ic1_hPhwbKLmLxL7Z_W7oaQoSz8-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62976687519-np6u054h0htaeme4upd02pd7cgf7f1dp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
