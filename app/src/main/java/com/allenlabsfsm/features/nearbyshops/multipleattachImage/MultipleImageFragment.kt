@@ -14,18 +14,15 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
-import android.provider.MediaStore.Images.Media.getBitmap
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.ContextCompat
 import com.allenlabsfsm.R
-import com.allenlabsfsm.app.AppDatabase
 import com.allenlabsfsm.app.NetworkConstant
 import com.allenlabsfsm.app.Pref
 import com.allenlabsfsm.app.domain.AddShopDBModelEntity
@@ -36,15 +33,10 @@ import com.allenlabsfsm.base.BaseResponse
 import com.allenlabsfsm.base.presentation.BaseActivity
 import com.allenlabsfsm.base.presentation.BaseFragment
 import com.allenlabsfsm.features.addshop.api.AddShopRepositoryProvider
-import com.allenlabsfsm.features.addshop.model.assigntopplist.AddShopUploadImg
 import com.allenlabsfsm.features.addshop.model.assigntopplist.AddshopImageMultiReqbody1
 import com.allenlabsfsm.features.addshop.model.imageListResponse
-import com.allenlabsfsm.features.beatCustom.BeatGetStatusModel
-import com.allenlabsfsm.features.beatCustom.api.GetBeatRegProvider
 import com.allenlabsfsm.features.dashboard.presentation.DashboardActivity
-import com.allenlabsfsm.features.marketing.model.MarketingDetailImageData
 import com.allenlabsfsm.widgets.AppCustomTextView
-
 import com.pnikosis.materialishprogress.ProgressWheel
 import com.squareup.picasso.Cache
 import com.squareup.picasso.MemoryPolicy
@@ -435,7 +427,6 @@ class MultipleImageFragment: BaseFragment(),
         }
         pictureDialog.show()
     }
-
     fun onRequestPermission(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         permissionUtils?.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
