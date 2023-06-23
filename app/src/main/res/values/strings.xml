@@ -12,7 +12,7 @@
 
     <!--Map Key-->
     <!--<string name="MAP_ProjectAPIKey">AIzaSyBRrqsLZFqThqM8uxw_k94pZMbv3-3h0dM</string>-->
-    <string name="MAP_ProjectAPIKey" translatable="false">AIzaSyAXGmF5l5hnNA55AuIRSPAB21qWDrRiGYs</string>
+    <string name="MAP_ProjectAPIKey" translatable="false">AIzaSyAXGmF5l5hnNA55AuIRSPAB21qWDrRiGY</string>
 
     <!--Login-->
     <string name="username_new" translatable="false">Username</string>

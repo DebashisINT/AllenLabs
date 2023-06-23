@@ -46,7 +46,7 @@
 
                 <ImageView
                     android:id="@+id/logo_new"
-                    android:layout_width="@dimen/_145sdp"
+                    android:layout_width="@dimen/_135sdp"
                     android:layout_height="@dimen/_78sdp"
                     android:src="@drawable/breezelogo"
                     android:layout_marginTop="@dimen/_30sdp"
@@ -144,6 +144,7 @@
                                                     android:background="@color/transparent"
                                                     android:inputType="textEmailAddress"
                                                     android:singleLine="true"
+                                                    android:cursorVisible="true"
                                                     android:paddingStart="@dimen/_10sdp"
                                                     android:textSize="@dimen/_13sdp"
                                                     app:theme="@style/EvoEditTextTheme" />

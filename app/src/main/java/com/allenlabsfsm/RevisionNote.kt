@@ -69,5 +69,11 @@ class RevisionNote {
     // 16.0  LoginActivity AppV 4.1.3 Suman    19/05/2023  26163
 // Rev 9.0 AddAttendanceFragment AppV 4.1.3 Suman    20/05/2023 beat flow updation 26163
 
-    // Rev 10.0 AddAttendanceFragment AppV 4.1.3 Suman    23/05/2023 Location refresh 26209
+    //  <!-- Rev 1.0 security config Suman 30-05-2023 mantis id 26261  >-->
+
+    // 2.0 AverageShopListAdapter mantis 26346: Suman 15-06-2023 Current Stock visibility updation
+    // 18.0  LoginActivity 0026388	mantis Suman v 4.1.6 20-06-2023
+
+    //Rev 1.0  AdapterOrdProductOptimized Suman 20-06-2023 mantis 0026389
+    //Rev 1.0  AdapterOrdCartOptimized Suman 20-06-2023 mantis 0026389
 }

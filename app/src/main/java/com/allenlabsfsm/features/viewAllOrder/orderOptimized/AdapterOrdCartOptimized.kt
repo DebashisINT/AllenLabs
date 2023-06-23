@@ -24,6 +24,8 @@ import com.allenlabsfsm.widgets.AppCustomTextView
 import kotlinx.android.synthetic.main.row_ord_opti_cart_list.view.*
 import kotlinx.android.synthetic.main.row_ord_opti_product_list.view.*
 
+//Rev 1.0  AdapterOrdCartOptimized Suman 20-06-2023 mantis 0026389
+
 class AdapterOrdCartOptimized(val mContext:Context,val cartL:ArrayList<FinalOrderData>,val listner:OnRateQtyOptiOnClick):
     RecyclerView.Adapter<AdapterOrdCartOptimized.OrdCartOptimizedViewHolder>(){
 
@@ -62,6 +64,13 @@ class AdapterOrdCartOptimized(val mContext:Context,val cartL:ArrayList<FinalOrde
             }else{
                 itemView.ll_row_ord_opti_cart_discount_root.visibility = View.GONE
             }
+            //Begin Rev 1.0  AdapterOrdCartOptimized Suman 20-06-2023 mantis 0026389
+            if(Pref.IsDiscountEditableInOrder){
+                itemView.et_row_ord_opti_cart_discount.isEnabled = true
+            }else{
+                itemView.et_row_ord_opti_cart_discount.isEnabled = false
+            }
+            //End of Rev 1.0  AdapterOrdCartOptimized Suman 20-06-2023 mantis 0026389
             if(Pref.IsViewMRPInOrder && Pref.IsDiscountInOrder){
                 itemView.ll_row_ord_opti_cart_mrp_discount_root.visibility = View.VISIBLE
             }else if(!Pref.IsViewMRPInOrder){
@@ -165,7 +174,7 @@ class AdapterOrdCartOptimized(val mContext:Context,val cartL:ArrayList<FinalOrde
                 override fun onFocusChange(v: View?, hasFocus: Boolean) {
                     if(hasFocus){
                         itemView.et_row_ord_opti_cart_rate.addTextChangedListener(
-                            CustomSpecialTextWatcher1(itemView.et_row_ord_opti_cart_rate, 5, 2, object : CustomSpecialTextWatcher1.GetCustomTextChangeListener {
+                            CustomSpecialTextWatcher1(itemView.et_row_ord_opti_cart_rate, 6, 2, object : CustomSpecialTextWatcher1.GetCustomTextChangeListener {
                                 override fun beforeTextChange(text: String) {
 
                                 }

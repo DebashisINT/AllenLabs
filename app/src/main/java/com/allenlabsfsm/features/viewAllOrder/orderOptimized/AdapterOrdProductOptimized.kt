@@ -27,6 +27,7 @@ import kotlinx.android.synthetic.main.customnotification.view.*
 import kotlinx.android.synthetic.main.row_ord_opti_cart_list.view.*
 import kotlinx.android.synthetic.main.row_ord_opti_product_list.view.*
 
+//Rev 1.0  AdapterOrdProductOptimized Suman 20-06-2023 mantis 0026389
 
 class AdapterOrdProductOptimized(val mContext: Context,var proList : ArrayList<ProductQtyRateSubmit>,var finalOrderDataList : ArrayList<FinalOrderData>, var listner :OnProductOptiOnClick):
     RecyclerView.Adapter<AdapterOrdProductOptimized.OrdProductOptimizedViewHolder>(){
@@ -65,6 +66,13 @@ class AdapterOrdProductOptimized(val mContext: Context,var proList : ArrayList<P
             }else{
                 itemView.ll_row_ord_pro_list_discount_root.visibility = View.GONE
             }
+            //Begin Rev 1.0  AdapterOrdProductOptimized Suman 20-06-2023 mantis 0026389
+            if(Pref.IsDiscountEditableInOrder){
+                itemView.tv_row_ord_pro_list_discount.isEnabled = true
+            }else{
+                itemView.tv_row_ord_pro_list_discount.isEnabled = false
+            }
+            //End of Rev 1.0  AdapterOrdProductOptimized Suman 20-06-2023 mantis 0026389
             if(Pref.IsViewMRPInOrder && Pref.IsDiscountInOrder){
                 itemView.ll_row_ord_pro_list_mrp_discount_root.visibility = View.VISIBLE
                 try{
@@ -210,7 +218,7 @@ class AdapterOrdProductOptimized(val mContext: Context,var proList : ArrayList<P
                         }
 
                         itemView.tv_row_ord_opti_product_list_rate.addTextChangedListener(
-                            CustomSpecialTextWatcher1(itemView.tv_row_ord_opti_product_list_rate, 5, 2, object : CustomSpecialTextWatcher1.GetCustomTextChangeListener {
+                            CustomSpecialTextWatcher1(itemView.tv_row_ord_opti_product_list_rate, 6, 2, object : CustomSpecialTextWatcher1.GetCustomTextChangeListener {
                                 override fun beforeTextChange(text: String) {
 
                                 }

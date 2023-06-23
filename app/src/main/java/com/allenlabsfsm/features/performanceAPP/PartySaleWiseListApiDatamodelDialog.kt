@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.allenlabsfsm.R
 import com.allenlabsfsm.features.nearbyshops.model.ShopData
-import com.allenlabsfsm.features.photoReg.adapter.AdapterUserTestList
+import com.allenlabsfsm.features.performanceAPP.model.AdapterUserTestList
 import com.allenlabsfsm.widgets.AppCustomEditText
 import com.allenlabsfsm.widgets.AppCustomTextView
 
