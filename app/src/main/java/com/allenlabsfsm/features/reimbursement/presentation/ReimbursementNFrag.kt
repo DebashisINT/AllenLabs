@@ -1242,6 +1242,9 @@ class ReimbursementNFrag : BaseFragment(), DateAdapter.onPetSelectedListener, Vi
 
         date = AppUtils.getFormattedDateForApi(selectedDate!!)
 
+        Handler().postDelayed(Runnable {
+            checkStationStatusFromRevisit(date)
+        }, 100)
 
         if (!isEditable) {
             tv_from_loc.text = ""
