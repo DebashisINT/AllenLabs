@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit
 class NetworkConstant {
     //Base URL
     companion object {
+
         var BASE_URL = "http://fts.indusnettechnologies.com:7064/API/"
         var ADD_SHOP_BASE_URL = "http://fts.indusnettechnologies.com:7064/"
 
